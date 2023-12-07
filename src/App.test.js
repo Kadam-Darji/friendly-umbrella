@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import App from './App';
 import puppeteer from 'puppeteer';
-
+jest.setTimeout(10000);
 test('renders learn react link', async() => {
   render(<App />);
   const browser = await puppeteer.launch();
