@@ -8,4 +8,5 @@ test('renders learn react link', async() => {
   const page = await browser.newPage();
   await page.goto("https://kadam-darji.github.io/friendly-umbrella");
   const image = await page.screenshot();
+  expect(image).toMatchImageSnapshot();
 });
