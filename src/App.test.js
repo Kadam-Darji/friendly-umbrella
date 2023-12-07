@@ -10,4 +10,5 @@ test('renders learn react link', async() => {
   await page.goto(packageJson.homepage);
   const image = await page.screenshot(); 
   expect(image).toMatchImageSnapshot();
+  
 });
